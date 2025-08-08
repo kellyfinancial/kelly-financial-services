@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>家庭资产保护与教育规划｜Family Asset Protection & Education Planning</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #6b7280;
+      --brand: #b91c1c;
+      --accent: #0ea5e9;
+      --card: #f9fafb;
+      --ring: rgba(14,165,233,.35);
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; color:var(--fg); background:var(--bg); line-height:1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(255,255,255,.85); border-bottom: 1px solid #e5e7eb; z-index: 10; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 24px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px; color: var(--brand); }
+    .lang-toggle { display:flex; border:1px solid #e5e7eb; border-radius: 999px; overflow:hidden; }
+    .lang-toggle button { padding:8px 14px; background:#fff; border:0; cursor:pointer; font-weight:600; }
+    .lang-toggle button.active { background: var(--brand); color:#fff; }
+    .hero { padding: 56px 24px 36px; text-align:center; background: linear-gradient(180deg, rgba(185,28,28,.08), transparent 65%); }
+    .hero img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; border:3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .hero h1 { font-size: 32px; margin:0 0 10px; }
+    .hero p { margin: 6px 0; color: var(--muted); }
+    .hero .tagline { font-weight: 700; color: var(--brand); margin-top: 10px; }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 22px; }
+    @media (min-width:900px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card); border:1px solid #e5e7eb; border-radius:16px; padding:22px; }
+    .card h3 { margin:0 0 8px; font-size: 20px; }
+    .list { display:grid; gap:8px; }
+    .pill { display:inline-block; background:#fff; border:1px solid #e5e7eb; padding:6px 10px; border-radius:999px; margin:4px 6px 0 0; font-size:14px; }
+    .bridge { display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; padding: 8px 0 0; }
+    .arrow { width:42px; height:2px; background: var(--brand); position:relative; }
+    .arrow::after { content:""; position:absolute; right:-6px; top:-4px; border:6px solid transparent; border-left-color: var(--brand); }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #e5e7eb; background:#fff; font-weight:700; cursor:pointer; }
+    .btn.primary { background: var(--brand); color:#fff; border-color: transparent; box-shadow: 0 0 0 0 rgba(14,165,233,0); }
+    .btn.primary:focus, .btn.primary:hover { box-shadow: 0 0 0 6px var(--ring); }
+    footer { margin: 48px 0 24px; color: var(--muted); font-size: 14px; text-align:center; }
+    [lang] { display:none; }
+    [lang].show { display:block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <div class="brand">我们是桥梁 · We Are the Bridge</div>
+      <div class="lang-toggle" role="tablist" aria-label="Language switcher">
+        <button id="btn-zh" class="active">中文</button>
+        <button id="btn-en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="zh" lang="zh-Hans" class="show">
+    <section class="hero container">
+      <img src="IMG_3160.JPG" alt="Kelly Lei" />
+      <h1>家庭资产保护与子女教育规划</h1>
+      <p>专注为家庭提供 <strong>资产保护、教育金、税务优化、退休与传承</strong> 的综合解决方案。</p>
+      <p class="tagline">我们代表客户 · 我们专注于金融教育</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">预约15分钟咨询</a>
+      </div>
+    </section>
+    <section class="container grid grid-2" id="services">
+      <div class="card">
+        <h3>常见家庭需求</h3>
+        <div class="list">
+          <span class="pill">紧急备用金</span>
+          <span class="pill">房贷保障</span>
+          <span class="pill">投资规划</span>
+          <span class="pill">节税</span>
+          <span class="pill">孩子大学教育金</span>
+          <span class="pill">退休规划</span>
+          <span class="pill">家庭保障（保险/风险转移）</span>
+          <span class="pill">遗产与传承规划</span>
+          <span class="pill">……</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>可提供的解决方案</h3>
+        <div class="list">
+          <span class="pill">401(k)/IRA 转存</span>
+          <span class="pill">人寿保险（Term / Whole / IUL / VUL）</span>
+          <span class="pill">长期护理保险（LTC）</span>
+          <span class="pill">共同基金 / 投资账户</span>
+          <span class="pill">教育储蓄（College Plans）</span>
+          <span class="pill">年金（Annuities）</span>
+          <span class="pill">遗产与财富传承（Legacy Planning）</span>
+          <span class="pill">……</span>
+        </div>
+      </div>
+    </section>
+    <section class="container card">
+      <h3>我们如何为您搭建“桥梁”</h3>
+      <p>了解您的家庭需求 → 匹配合适的产品与机构 → 持续服务与教育，陪伴您长期成长。</p>
+      <div class="bridge" aria-hidden="true">
+        <div class="pill">家庭需求</div>
+        <div class="arrow"></div>
+        <div class="pill">专业顾问（独立代表客户）</div>
+        <div class="arrow"></div>
+        <div class="pill">多家合作机构与产品</div>
+      </div>
+      <div style="margin-top:14px; color:var(--muted); font-size:14px;">合作品牌（部分）：American Funds、Nationwide、Jackson、Transamerica、Fidelity、Franklin Templeton、Transamerica One 等。</div>
+    </section>
+    <section class="container card" id="contact">
+      <h3>联系我</h3>
+      <ul>
+        <li>姓名：<strong>Kelly Lei</strong></li>
+        <li>电子邮箱：<strong>kellylei52088@gmail.com</strong></li>
+        <li>电话：<strong>206-830-0035</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <main id="en" lang="en">
+    <section class="hero container">
+      <img src="IMG_3160.JPG" alt="Kelly Lei" />
+      <h1>Family Asset Protection & Education Planning</h1>
+      <p>I help families with <strong>protection, college funding, tax efficiency, retirement, and legacy</strong> through clear, client-first financial education.</p>
+      <p class="tagline">We represent our clients · We focus on financial education</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact-en">Book a 15‑min intro call</a>
+      </div>
+    </section>
+    <section class="container grid grid-2" id="services-en">
+      <div class="card">
+        <h3>Common Needs</h3>
+        <div class="list">
+          <span class="pill">Emergency Fund</span>
+          <span class="pill">Mortgage Coverage</span>
+          <span class="pill">Investment Planning</span>
+          <span class="pill">Save Tax</span>
+          <span class="pill">Kids’ College Education</span>
+          <span class="pill">Retirement</span>
+          <span class="pill">Protection (Insurance / Risk Transfer)</span>
+          <span class="pill">Estate Planning</span>
+          <span class="pill">…</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Solutions</h3>
+        <div class="list">
+          <span class="pill">401(k)/IRA Rollover</span>
+          <span class="pill">Life Insurance (Term / Whole / IUL / VUL)</span>
+          <span class="pill">LTC Insurance</span>
+          <span class="pill">Mutual Funds / Investment Accounts</span>
+          <span class="pill">College Plans</span>
+          <span class="pill">Annuities</span>
+          <span class="pill">Legacy Planning</span>
+          <span class="pill">…</span>
+        </div>
+      </div>
+    </section>
+    <section class="container card">
+      <h3>How the “Bridge” Works</h3>
+      <p>We learn your goals → map them to the right products & institutions → deliver ongoing service and education.</p>
+      <div class="bridge" aria-hidden="true">
+        <div class="pill">Client Needs</div>
+        <div class="arrow"></div>
+        <div class="pill">Independent Advisor (client-first)</div>
+        <div class="arrow"></div>
+        <div class="pill">Multiple Partners & Solutions</div>
+      </div>
+      <div style="margin-top:14px; color:var(--muted); font-size:14px;">Selected partners: American Funds, Nationwide, Jackson, Transamerica, Fidelity, Franklin Templeton, Transamerica One, and more.</div>
+    </section>
+    <section class="container card" id="contact-en">
+      <h3>Contact</h3>
+      <ul>
+        <li>Name: <strong>Kelly Lei</strong></li>
+        <li>Email: <strong>kellylei52088@gmail.com</strong></li>
+        <li>Phone: <strong>206-830-0035</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Kelly Lei. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const zh = document.getElementById('zh');
+    const en = document.getElementById('en');
+    const btnZh = document.getElementById('btn-zh');
+    const btnEn = document.getElementById('btn-en');
+    function setLang(lang){
+      if(lang==='zh'){ zh.classList.add('show'); en.classList.remove('show'); btnZh.classList.add('active'); btnEn.classList.remove('active'); document.documentElement.lang='zh-Hans'; }
+      else { en.classList.add('show'); zh.classList.remove('show'); btnEn.classList.add('active'); btnZh.classList.remove('active'); document.documentElement.lang='en'; }
+    }
+    btnZh.addEventListener('click',()=>setLang('zh'));
+    btnEn.addEventListener('click',()=>setLang('en'));
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
