@@ -5,62 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kelly Financial Services | 西雅图财务规划 Seattle Financial Planning</title>
 
-  <!-- ✅ SEO Meta 标签 -->
+  <!-- SEO -->
   <meta name="title" content="Kelly Financial Services | 西雅图财务规划 Seattle Financial Planning & Wealth Management">
-  <meta name="description" content="位于西雅图的专业财务规划与财富管理服务。提供保险规划、投资理财、子女教育基金、退休计划和财富传承，帮助家庭实现长期财务目标。Professional financial planning and wealth management in Seattle, helping families with insurance, investment, retirement, and education funding.">
+  <meta name="description" content="位于西雅图的专业财务规划与财富管理服务。提供保险规划、投资理财、子女教育基金、退休计划和财富传承，帮助家庭实现长期财务目标。Professional financial planning and wealth management in Seattle.">
   <meta name="keywords" content="Seattle financial planning, 西雅图财务规划, Seattle wealth management, 财富管理, 华人理财, 家庭财务, 保险规划, 投资顾问, retirement planning, 教育基金, 财务自由">
   <meta name="author" content="Kelly Lei">
 
-  <!-- ✅ Open Graph (社交媒体分享用) -->
+  <!-- OG -->
   <meta property="og:title" content="Kelly Financial Services | 西雅图财务规划 Seattle Financial Planning">
   <meta property="og:description" content="西雅图财务规划与财富管理 · Seattle Financial Planning & Wealth Management">
   <meta property="og:url" content="https://kellyfinancial.github.io/kelly-financial-services/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://kellyfinancial.github.io/kelly-financial-services/logo.png">
 
-  <!-- ✅ 样式 -->
   <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #111827;
-      --muted: #6b7280;
-      --brand: #b91c1c;
-      --accent: #0ea5e9;
-      --card: #f9fafb;
-      --ring: rgba(14,165,233,.35);
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; color:var(--fg); background:var(--bg); line-height:1.6; }
-    a { color: var(--accent); text-decoration: none; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(255,255,255,.85); border-bottom: 1px solid #e5e7eb; z-index: 10; }
-    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 24px; }
-    .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px; color: var(--brand); }
-    .lang-toggle { display:flex; border:1px solid #e5e7eb; border-radius: 999px; overflow:hidden; }
-    .lang-toggle button { padding:8px 14px; background:#fff; border:0; cursor:pointer; font-weight:600; }
-    .lang-toggle button.active { background: var(--brand); color:#fff; }
-    .hero { padding: 56px 24px 36px; text-align:center; background: linear-gradient(180deg, rgba(185,28,28,.08), transparent 65%); }
-    .hero img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; border:3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .hero h1 { font-size: 32px; margin:0 0 10px; }
-    .hero p { margin: 6px 0; color: var(--muted); }
-    .hero .tagline { font-weight: 700; color: var(--brand); margin-top: 10px; }
-    .grid { display:grid; grid-template-columns: 1fr; gap: 22px; }
-    @media (min-width:900px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
-    .card { background: var(--card); border:1px solid #e5e7eb; border-radius:16px; padding:22px; }
-    .card h3 { margin:0 0 8px; font-size: 20px; }
-    .list { display:grid; gap:8px; }
-    .pill { display:inline-block; background:#fff; border:1px solid #e5e7eb; padding:6px 10px; border-radius:999px; margin:4px 6px 0 0; font-size:14px; }
-    .bridge { display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; padding: 8px 0 0; }
-    .arrow { width:42px; height:2px; background: var(--brand); position:relative; }
-    .arrow::after { content:""; position:absolute; right:-6px; top:-4px; border:6px solid transparent; border-left-color: var(--brand); }
-    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
-    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #e5e7eb; background:#fff; font-weight:700; cursor:pointer; }
-    .btn.primary { background: var(--brand); color:#fff; border-color: transparent; box-shadow: 0 0 0 0 rgba(14,165,233,0); }
-    .btn.primary:focus, .btn.primary:hover { box-shadow: 0 0 0 6px var(--ring); }
-    footer { margin: 48px 0 24px; color: var(--muted); font-size: 14px; text-align:center; }
-    /* ✅ 默认显示中文，英文先隐藏（避免空白） */
-    #en { display:none; }
+    :root{--bg:#fff;--fg:#111827;--muted:#6b7280;--brand:#b91c1c;--accent:#0ea5e9;--card:#f9fafb;--ring:rgba(14,165,233,.35);}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--fg);background:var(--bg);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(255,255,255,.85);border-bottom:1px solid #e5e7eb;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--brand)}
+    .lang-toggle{display:flex;border:1px solid #e5e7eb;border-radius:999px;overflow:hidden}
+    .lang-toggle button{padding:8px 14px;background:#fff;border:0;cursor:pointer;font-weight:600}
+    .lang-toggle button.active{background:var(--brand);color:#fff}
+    .hero{padding:56px 24px 36px;text-align:center;background:linear-gradient(180deg, rgba(185,28,28,.08), transparent 65%)}
+    .hero img{width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:16px;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+    .hero h1{font-size:32px;margin:0 0 10px}
+    .hero p{margin:6px 0;color:var(--muted)}
+    .hero .tagline{font-weight:700;color:var(--brand);margin-top:10px}
+    .grid{display:grid;grid-template-columns:1fr;gap:22px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1fr 1fr} }
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:22px}
+    .card h3{margin:0 0 8px;font-size:20px}
+    .list{display:grid;gap:8px}
+    .pill{display:inline-block;background:#fff;border:1px solid #e5e7eb;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:14px}
+    .bridge{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;padding:8px 0 0}
+    .arrow{width:42px;height:2px;background:var(--brand);position:relative}
+    .arrow::after{content:"";position:absolute;right:-6px;top:-4px;border:6px solid transparent;border-left-color:var(--brand)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;font-weight:700;cursor:pointer}
+    .btn.primary{background:var(--brand);color:#fff;border-color:transparent;box-shadow:0 0 0 0 rgba(14,165,233,0)}
+    .btn.primary:focus,.btn.primary:hover{box-shadow:0 0 0 6px var(--ring)}
+    footer{margin:48px 0 24px;color:var(--muted);font-size:14px;text-align:center}
+    /* 关键：默认中文显示，英文先隐藏，避免“中间内容”被样式整体隐藏 */
+    #en{display:none}
   </style>
+
+  <noscript>
+    <style>
+      /* 没有 JS 时，两个语言都显示，确保“中间内容”可见 */
+      #en { display:block !important; }
+    </style>
+  </noscript>
 </head>
 <body>
   <header>
@@ -76,16 +74,95 @@
   <!-- 中文版 -->
   <main id="zh" lang="zh-Hans">
     <section class="hero container">
+      <img src="IMG_0572.JPG" alt="Kelly Lei" />
       <h1>家庭资产保护与子女教育规划</h1>
+      <p>专注提供 <strong>资产保护、教育金、税务优化、退休与传承</strong> 的综合解决方案。</p>
       <p class="tagline">我们代表客户 · 我们专注于金融教育</p>
+      <div class="cta"><a class="btn primary" href="#contact">预约15分钟咨询</a></div>
+    </section>
+
+    <!-- ✅ 中间内容：服务与解决方案 -->
+    <section class="container grid grid-2" id="services">
+      <div class="card">
+        <h3>常见家庭需求</h3>
+        <div class="list">
+          <span class="pill">紧急备用金</span><span class="pill">房贷保障</span><span class="pill">投资规划</span>
+          <span class="pill">节税</span><span class="pill">孩子大学教育金</span><span class="pill">退休规划</span>
+          <span class="pill">家庭保障（保险/风险转移）</span><span class="pill">遗产与传承规划</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>可提供的解决方案</h3>
+        <div class="list">
+          <span class="pill">401(k)/IRA 优化</span><span class="pill">风险管理工具</span><span class="pill">健康/长期照护</span>
+          <span class="pill">多元化投资组合</span><span class="pill">孩子教育金</span><span class="pill">财富传承</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container card">
+      <h3>我们如何为您搭建“桥梁”</h3>
+      <p>了解您的家庭需求 → 匹配合适的产品与机构 → 持续服务与教育，陪伴您长期成长。</p>
+      <div class="bridge" aria-hidden="true">
+        <div class="pill">家庭需求</div><div class="arrow"></div>
+        <div class="pill">独立顾问（代表客户）</div><div class="arrow"></div>
+        <div class="pill">多家合作机构与产品</div>
+      </div>
+      <div style="margin-top:14px;color:var(--muted);font-size:14px;">
+        合作品牌（部分）：American Funds、Nationwide、Jackson、Transamerica、Fidelity、Franklin Templeton 等。
+      </div>
+    </section>
+
+    <!-- ✅ 中间内容：联系 -->
+    <section class="container card" id="contact">
+      <h3>联系我</h3>
+      <ul>
+        <li>姓名：<strong>Kelly Lei</strong></li>
+        <li>电子邮箱：
+          <a class="btn primary" href="mailto:kellyventures52588@gmail.com?subject=预约咨询&body=您好%20Kelly%EF%BC%8C我想预约一次家庭财务规划咨询。">📧 发送邮件</a>
+        </li>
+        <li>电话：<a class="btn" href="tel:2068300035">📞 206-830-0035</a></li>
+      </ul>
     </section>
   </main>
 
   <!-- 英文版 -->
   <main id="en" lang="en">
     <section class="hero container">
+      <img src="IMG_0572.JPG" alt="Kelly Lei" />
       <h1>Family Asset Protection & Education Planning</h1>
+      <p>I help families with <strong>protection, college funding, tax efficiency, retirement, and legacy</strong> through client-first education.</p>
       <p class="tagline">We represent our clients · We focus on financial education</p>
+      <div class="cta"><a class="btn primary" href="#contact-en">Book a 15-min intro call</a></div>
+    </section>
+
+    <section class="container grid grid-2" id="services-en">
+      <div class="card">
+        <h3>Common Needs</h3>
+        <div class="list">
+          <span class="pill">Emergency Fund</span><span class="pill">Mortgage Coverage</span><span class="pill">Investment Planning</span>
+          <span class="pill">Tax Efficiency</span><span class="pill">College Funding</span><span class="pill">Retirement</span>
+          <span class="pill">Protection (Insurance)</span><span class="pill">Estate Planning</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Solutions</h3>
+        <div class="list">
+          <span class="pill">401(k)/IRA Optimization</span><span class="pill">Risk Management</span><span class="pill">Health & LTC</span>
+          <span class="pill">Diversified Strategies</span><span class="pill">Education Fund</span><span class="pill">Legacy Planning</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container card" id="contact-en">
+      <h3>Contact</h3>
+      <ul>
+        <li>Name: <strong>Kelly Lei</strong></li>
+        <li>Email:
+          <a class="btn primary" href="mailto:kellyventures52588@gmail.com?subject=Financial%20Planning%20Consultation&body=Hello%20Kelly%2C%20I%20would%20like%20to%20book%20an%20intro%20call.">📧 Send Email</a>
+        </li>
+        <li>Phone: <a class="btn" href="tel:2068300035">📞 206-830-0035</a></li>
+      </ul>
     </section>
   </main>
 
@@ -105,19 +182,17 @@
           zh.style.display='block'; en.style.display='none';
           btnZh.classList.add('active'); btnEn.classList.remove('active');
           document.documentElement.lang='zh-Hans';
-        } else {
+        }else{
           en.style.display='block'; zh.style.display='none';
           btnEn.classList.add('active'); btnZh.classList.remove('active');
           document.documentElement.lang='en';
         }
       }
 
-      // ✅ 默认中文
-      setLang('zh');
-
-      btnZh.addEventListener('click',()=>setLang('zh'));
-      btnEn.addEventListener('click',()=>setLang('en'));
-      document.getElementById('y').textContent=new Date().getFullYear();
+      setLang('zh'); // 默认中文
+      btnZh?.addEventListener('click',()=>setLang('zh'));
+      btnEn?.addEventListener('click',()=>setLang('en'));
+      const y=document.getElementById('y'); if(y) y.textContent=new Date().getFullYear();
     });
   </script>
 </body>
