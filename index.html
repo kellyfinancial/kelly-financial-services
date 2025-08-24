@@ -5,50 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kelly Financial Services | 西雅图财务规划 Seattle Financial Planning</title>
 
-  <!-- 你的 SEO / OG Meta（保留即可） -->
+  <!-- ✅ SEO Meta 标签 -->
+  <meta name="title" content="Kelly Financial Services | 西雅图财务规划 Seattle Financial Planning & Wealth Management">
+  <meta name="description" content="位于西雅图的专业财务规划与财富管理服务。提供保险规划、投资理财、子女教育基金、退休计划和财富传承，帮助家庭实现长期财务目标。Professional financial planning and wealth management in Seattle, helping families with insurance, investment, retirement, and education funding.">
+  <meta name="keywords" content="Seattle financial planning, 西雅图财务规划, Seattle wealth management, 财富管理, 华人理财, 家庭财务, 保险规划, 投资顾问, retirement planning, 教育基金, 财务自由">
+  <meta name="author" content="Kelly Lei">
 
+  <!-- ✅ Open Graph (社交媒体分享用) -->
+  <meta property="og:title" content="Kelly Financial Services | 西雅图财务规划 Seattle Financial Planning">
+  <meta property="og:description" content="西雅图财务规划与财富管理 · Seattle Financial Planning & Wealth Management">
+  <meta property="og:url" content="https://kelly88520.github.io/kelly-financial-services/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kelly88520.github.io/kelly-financial-services/logo.png">
+
+  <!-- ✅ 样式 -->
   <style>
-    :root { --bg:#fff; --fg:#111827; --muted:#6b7280; --brand:#b91c1c; --accent:#0ea5e9; --card:#f9fafb; --ring:rgba(14,165,233,.35); }
-    *{box-sizing:border-box;}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--fg);background:var(--bg);line-height:1.6;}
-    a{color:var(--accent);text-decoration:none;}
-    .container{max-width:1100px;margin:0 auto;padding:24px;}
-    header{position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(255,255,255,.85);border-bottom:1px solid #e5e7eb;z-index:10;}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--brand);}
-    .lang-toggle{display:flex;border:1px solid #e5e7eb;border-radius:999px;overflow:hidden;}
-    .lang-toggle button{padding:8px 14px;background:#fff;border:0;cursor:pointer;font-weight:600;}
-    .lang-toggle button.active{background:var(--brand);color:#fff;}
-    .hero{padding:56px 24px 36px;text-align:center;background:linear-gradient(180deg, rgba(185,28,28,.08), transparent 65%);}
-    .hero img{width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:16px;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-    .hero h1{font-size:32px;margin:0 0 10px;}
-    .hero p{margin:6px 0;color:var(--muted);}
-    .hero .tagline{font-weight:700;color:var(--brand);margin-top:10px;}
-    .grid{display:grid;grid-template-columns:1fr;gap:22px;}
-    @media (min-width:900px){ .grid-2{grid-template-columns:1fr 1fr;} }
-    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:22px;}
-    .card h3{margin:0 0 8px;font-size:20px;}
-    .list{display:grid;gap:8px;}
-    .pill{display:inline-block;background:#fff;border:1px solid #e5e7eb;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:14px;}
-    .bridge{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;padding:8px 0 0;}
-    .arrow{width:42px;height:2px;background:var(--brand);position:relative;}
-    .arrow::after{content:"";position:absolute;right:-6px;top:-4px;border:6px solid transparent;border-left-color:var(--brand);}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;}
-    .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;font-weight:700;cursor:pointer;}
-    .btn.primary{background:var(--brand);color:#fff;border-color:transparent;box-shadow:0 0 0 0 rgba(14,165,233,0);}
-    .btn.primary:focus,.btn.primary:hover{box-shadow:0 0 0 6px var(--ring);}
-    footer{margin:48px 0 24px;color:var(--muted);font-size:14px;text-align:center;}
-    /* ✅ 默认显示中文，英文先隐藏（无脚本也不会空白） */
-    main[lang]{display:block;}
-    #en{display:none;}
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #6b7280;
+      --brand: #b91c1c;
+      --accent: #0ea5e9;
+      --card: #f9fafb;
+      --ring: rgba(14,165,233,.35);
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; color:var(--fg); background:var(--bg); line-height:1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(255,255,255,.85); border-bottom: 1px solid #e5e7eb; z-index: 10; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 24px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px; color: var(--brand); }
+    .lang-toggle { display:flex; border:1px solid #e5e7eb; border-radius: 999px; overflow:hidden; }
+    .lang-toggle button { padding:8px 14px; background:#fff; border:0; cursor:pointer; font-weight:600; }
+    .lang-toggle button.active { background: var(--brand); color:#fff; }
+    .hero { padding: 56px 24px 36px; text-align:center; background: linear-gradient(180deg, rgba(185,28,28,.08), transparent 65%); }
+    .hero img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; border:3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .hero h1 { font-size: 32px; margin:0 0 10px; }
+    .hero p { margin: 6px 0; color: var(--muted); }
+    .hero .tagline { font-weight: 700; color: var(--brand); margin-top: 10px; }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 22px; }
+    @media (min-width:900px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card); border:1px solid #e5e7eb; border-radius:16px; padding:22px; }
+    .card h3 { margin:0 0 8px; font-size: 20px; }
+    .list { display:grid; gap:8px; }
+    .pill { display:inline-block; background:#fff; border:1px solid #e5e7eb; padding:6px 10px; border-radius:999px; margin:4px 6px 0 0; font-size:14px; }
+    .bridge { display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; padding: 8px 0 0; }
+    .arrow { width:42px; height:2px; background: var(--brand); position:relative; }
+    .arrow::after { content:""; position:absolute; right:-6px; top:-4px; border:6px solid transparent; border-left-color: var(--brand); }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #e5e7eb; background:#fff; font-weight:700; cursor:pointer; }
+    .btn.primary { background: var(--brand); color:#fff; border-color: transparent; box-shadow: 0 0 0 0 rgba(14,165,233,0); }
+    .btn.primary:focus, .btn.primary:hover { box-shadow: 0 0 0 6px var(--ring); }
+    footer { margin: 48px 0 24px; color: var(--muted); font-size: 14px; text-align:center; }
+    /* ✅ 默认显示中文，英文先隐藏（避免空白） */
+    #en { display:none; }
   </style>
-
-  <noscript>
-    <style>
-      /* 没有 JS 时，两个语言都显示 */
-      #en { display:block !important; }
-    </style>
-  </noscript>
 </head>
 <body>
   <header>
@@ -61,18 +73,16 @@
     </div>
   </header>
 
-  <!-- 中文 -->
+  <!-- 中文版 -->
   <main id="zh" lang="zh-Hans">
-    <!-- 你的中文内容 -->
     <section class="hero container">
       <h1>家庭资产保护与子女教育规划</h1>
       <p class="tagline">我们代表客户 · 我们专注于金融教育</p>
     </section>
   </main>
 
-  <!-- 英文 -->
+  <!-- 英文版 -->
   <main id="en" lang="en">
-    <!-- your English content -->
     <section class="hero container">
       <h1>Family Asset Protection & Education Planning</h1>
       <p class="tagline">We represent our clients · We focus on financial education</p>
@@ -91,16 +101,23 @@
       const btnEn = document.getElementById('btn-en');
 
       function setLang(lang){
-        if(lang==='zh'){ zh.style.display='block'; en.style.display='none'; document.documentElement.lang='zh-Hans'; btnZh.classList.add('active'); btnEn.classList.remove('active'); }
-        else { en.style.display='block'; zh.style.display='none'; document.documentElement.lang='en'; btnEn.classList.add('active'); btnZh.classList.remove('active'); }
+        if(lang==='zh'){
+          zh.style.display='block'; en.style.display='none';
+          btnZh.classList.add('active'); btnEn.classList.remove('active');
+          document.documentElement.lang='zh-Hans';
+        } else {
+          en.style.display='block'; zh.style.display='none';
+          btnEn.classList.add('active'); btnZh.classList.remove('active');
+          document.documentElement.lang='en';
+        }
       }
 
-      // 默认中文
+      // ✅ 默认中文
       setLang('zh');
 
-      btnZh?.addEventListener('click',()=>setLang('zh'));
-      btnEn?.addEventListener('click',()=>setLang('en'));
-      const y=document.getElementById('y'); if(y) y.textContent=new Date().getFullYear();
+      btnZh.addEventListener('click',()=>setLang('zh'));
+      btnEn.addEventListener('click',()=>setLang('en'));
+      document.getElementById('y').textContent=new Date().getFullYear();
     });
   </script>
 </body>
